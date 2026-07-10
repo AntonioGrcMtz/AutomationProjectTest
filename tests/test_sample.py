@@ -13,7 +13,6 @@ async def test_example_website(page: Page):
 
     assert await sauce_demo.is_login_button_visible() is True
 
-
 @pytest.mark.asyncio
 async def test_page_title(page: Page):
     """Test Sauce Demo page title verification."""
@@ -25,7 +24,7 @@ async def test_page_title(page: Page):
     assert "swag labs" in title.lower()
 
 @pytest.mark.asyncio
-async def test_page_title(page: Page):
+async def test_page_title_name(page: Page):
     """Test page title verification."""
     sauce_demo = SauceDemoPage(page)
     await sauce_demo.open()
